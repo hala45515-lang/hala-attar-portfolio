@@ -1,0 +1,42 @@
+.card {
+  position: relative;
+  background: var(--glass);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transform-style: preserve-3d;
+  transition: border-color 0.4s var(--ease), box-shadow 0.4s var(--ease), background 0.4s var(--ease);
+}
+
+.card:hover {
+  border-color: rgba(167, 139, 250, 0.4);
+  background: rgba(167, 139, 250, 0.06);
+  box-shadow: 0 24px 60px -24px rgba(123, 94, 167, 0.7);
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s var(--ease);
+  background: radial-gradient(circle at var(--glow-x) var(--glow-y), var(--glow-color), transparent 60%);
+}
+
+.card:hover .glow {
+  opacity: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  transform: translateZ(20px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transform: none !important;
+  }
+}

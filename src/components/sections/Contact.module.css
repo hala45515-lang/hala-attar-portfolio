@@ -1,0 +1,183 @@
+.dots {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image: radial-gradient(rgba(167, 139, 250, 0.5) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, #000, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, #000, transparent 80%);
+}
+
+.split {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.big {
+  font-family: var(--font-headline);
+  font-size: clamp(46px, 7vw, 100px);
+  line-height: 0.88;
+  letter-spacing: 0.01em;
+  margin: 18px 0 20px;
+}
+.big em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.sub {
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 360px;
+  margin-bottom: 34px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  width: fit-content;
+  background: var(--glass);
+  border: 1px solid var(--line);
+  border-radius: 50px;
+  padding: 11px 18px;
+  backdrop-filter: blur(8px);
+  transition: color 0.25s var(--ease), border-color 0.25s var(--ease), background 0.25s var(--ease),
+    transform 0.25s var(--ease);
+}
+.chip:hover {
+  color: var(--violet-3);
+  border-color: rgba(167, 139, 250, 0.4);
+  background: rgba(167, 139, 250, 0.06);
+  transform: translateY(-2px);
+}
+.chip svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  color: var(--violet);
+}
+
+.formCard {
+  background: var(--glass);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  padding: 40px 38px;
+  box-shadow: 0 40px 100px -40px rgba(123, 94, 167, 0.2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.field label {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.field input,
+.field textarea {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 13px 16px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--ink);
+  outline: none;
+  resize: none;
+  transition: border-color 0.25s var(--ease), background 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+.field input::placeholder,
+.field textarea::placeholder {
+  color: var(--ink-faint);
+  font-size: 14px;
+}
+.field input:focus,
+.field textarea:focus {
+  border-color: rgba(167, 139, 250, 0.55);
+  background: rgba(167, 139, 250, 0.04);
+  box-shadow: 0 0 0 4px rgba(167, 139, 250, 0.07);
+}
+
+.submit {
+  width: 100%;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(10, 10, 18, 0.3);
+  border-top-color: #0a0a12;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.formStatus {
+  font-size: 14px;
+  text-align: center;
+  padding: 12px 18px;
+  border-radius: 10px;
+}
+.ok {
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.07);
+  border: 1px solid rgba(74, 222, 128, 0.2);
+}
+.errMsg {
+  color: #f87171;
+  background: rgba(248, 113, 113, 0.07);
+  border: 1px solid rgba(248, 113, 113, 0.2);
+}
+
+@media (max-width: 768px) {
+  .split {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .row {
+    grid-template-columns: 1fr;
+  }
+  .formCard {
+    padding: 28px 22px;
+  }
+}

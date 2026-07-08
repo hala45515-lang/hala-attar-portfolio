@@ -1,0 +1,134 @@
+.nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 100;
+  transition: background 0.4s var(--ease), border-color 0.4s var(--ease), backdrop-filter 0.4s var(--ease);
+  border-bottom: 1px solid transparent;
+}
+
+.scrolled {
+  background: rgba(7, 8, 13, 0.65);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border-bottom: 1px solid var(--line);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 74px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: clamp(40px, 5.5vw, 58px);
+  width: auto;
+  max-height: 58px;
+  filter: drop-shadow(0 0 10px rgba(167, 139, 250, 0.45));
+  transition: filter 0.3s var(--ease);
+}
+.logo:hover img {
+  filter: drop-shadow(0 0 16px rgba(167, 139, 250, 0.7));
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.link,
+.linkActive {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.25s var(--ease);
+  white-space: nowrap;
+}
+.link {
+  color: var(--ink-soft);
+}
+.link::after,
+.linkActive::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background: var(--violet);
+  transition: width 0.3s var(--ease);
+}
+.link:hover {
+  color: var(--ink);
+}
+.link:hover::after {
+  width: 100%;
+}
+.linkActive {
+  color: var(--violet-3);
+}
+.linkActive::after {
+  width: 100%;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  z-index: 120;
+}
+.burger span {
+  width: 26px;
+  height: 2px;
+  background: var(--ink);
+  transition: 0.3s var(--ease);
+}
+.burgerOpen span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.burgerOpen span:nth-child(2) {
+  opacity: 0;
+}
+.burgerOpen span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 110;
+  background: rgba(7, 8, 13, 0.97);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+}
+.overlay a {
+  font-family: var(--font-headline);
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: var(--ink-soft);
+  transition: color 0.25s var(--ease);
+}
+.overlay a:hover {
+  color: var(--violet);
+}
+
+@media (max-width: 1100px) {
+  .links {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+}

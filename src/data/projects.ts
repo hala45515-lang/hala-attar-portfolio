@@ -1,0 +1,64 @@
+import omsDashboard from '../assets/images/oms-dashboard.png'
+import omsOrders from '../assets/images/oms-orders.png'
+import omsAnalytics from '../assets/images/oms-analytics.png'
+import streamvibe from '../assets/images/streamvibe.png'
+import aleppoKitchen from '../assets/images/aleppo-kitchen.png'
+import trendyStore from '../assets/images/trendy-store.png'
+
+export interface OmsTab {
+  label: string
+  url: string
+  image: string
+}
+
+export const featuredProject = {
+  badge: '★ Featured Project',
+  title: 'Order Management System',
+  description:
+    'A full-scale business management system built with React.js and MongoDB. Features include a real-time analytics dashboard, complete order lifecycle management (create, approve, reject, ship), advanced filtering and search, Excel and PDF export, and support for 1000+ orders. Designed with a clean, professional UI focused on usability and performance.',
+  tags: ['React.js', 'JavaScript', 'Tailwind CSS', 'MongoDB'],
+  link: 'https://github.com/hala45515-lang',
+  linkLabel: 'GitHub',
+  linkNote: 'Private Repo',
+  tabs: [
+    { label: 'Dashboard', url: 'app.oms.dashboard / dashboard', image: omsDashboard },
+    { label: 'Orders', url: 'app.oms.dashboard / orders', image: omsOrders },
+    { label: 'Analytics', url: 'app.oms.dashboard / analytics', image: omsAnalytics },
+  ] satisfies OmsTab[],
+}
+
+export interface MoreProject {
+  no: string
+  title: string
+  description: string
+  tags: string
+  link: string
+  image: string
+}
+
+export const moreProjects: MoreProject[] = [
+  {
+    no: '01',
+    title: 'StreamVibe',
+    description: 'A Netflix-inspired movie streaming interface with dynamic browsing.',
+    tags: 'React.js / Tailwind',
+    link: 'https://team-project-ivory-two.vercel.app/',
+    image: streamvibe,
+  },
+  {
+    no: '02',
+    title: 'Aleppo Kitchen',
+    description: 'A warm, appetite-driven restaurant website with menu and ordering.',
+    tags: 'React.js / JavaScript',
+    link: 'https://aleppo-kitchen-with-react.vercel.app/',
+    image: aleppoKitchen,
+  },
+  {
+    no: '03',
+    title: 'Trendy Store',
+    description: 'A clean e-commerce storefront with cart, filtering, and checkout flow.',
+    tags: 'React.js / Tailwind',
+    link: 'https://hala-trendy-store.vercel.app/',
+    image: trendyStore,
+  },
+]
