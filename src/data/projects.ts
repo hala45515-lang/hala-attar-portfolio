@@ -39,7 +39,7 @@ export interface MoreProject {
 export const moreProjects: MoreProject[] = [
   {
     no: '01',
-    title: 'StreamVibe',
+    title: 'Movie World',
     description: 'A Netflix-inspired movie streaming interface with dynamic browsing.',
     tags: 'React.js / Tailwind',
     link: 'https://team-project-ivory-two.vercel.app/',
