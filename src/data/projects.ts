@@ -4,6 +4,8 @@ import omsAnalytics from '../assets/images/oms-analytics.png'
 import streamvibe from '../assets/images/streamvibe.png'
 import aleppoKitchen from '../assets/images/aleppo-kitchen.png'
 import trendyStore from '../assets/images/trendy-store.png'
+import calculator from '../assets/images/calculator.png'
+import glowcart from '../assets/images/glowcart.png'
 
 export interface OmsTab {
   label: string
@@ -60,5 +62,23 @@ export const moreProjects: MoreProject[] = [
     tags: 'React.js / Tailwind',
     link: 'https://hala-trendy-store.vercel.app/',
     image: trendyStore,
+  },
+  {
+    no: '04',
+    title: 'Calculator',
+    // TODO(Hala): confirm the tech stack tags below match what you actually built this with.
+    description: 'An advanced calculator with scientific mode, keyboard shortcuts, and a clean dark UI.',
+    tags: 'JavaScript',
+    link: 'https://hala-calculator.vercel.app/',
+    image: calculator,
+  },
+  {
+    no: '05',
+    title: 'GlowCart',
+    // TODO(Hala): confirm the tech stack tags below match what you actually built this with.
+    description: 'A beauty & makeup e-commerce concept with shade matching, routines, and curated looks.',
+    tags: 'JavaScript',
+    link: 'https://glowup-store-iota.vercel.app/',
+    image: glowcart,
   },
 ]
