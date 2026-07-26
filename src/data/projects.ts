@@ -75,9 +75,8 @@ export const moreProjects: MoreProject[] = [
   {
     no: '05',
     title: 'GlowCart',
-    // TODO(Hala): confirm the tech stack tags below match what you actually built this with.
     description: 'A beauty & makeup e-commerce concept with shade matching, routines, and curated looks.',
-    tags: 'JavaScript',
+    tags: 'React.js / Tailwind',
     link: 'https://glowup-store-iota.vercel.app/',
     image: glowcart,
   },
