@@ -68,9 +68,8 @@ export const moreProjects: MoreProject[] = [
   {
     no: '04',
     title: 'Calculator',
-    // TODO(Hala): confirm the tech stack tags below match what you actually built this with.
     description: 'An advanced calculator with scientific mode, keyboard shortcuts, and a clean dark UI.',
-    tags: 'JavaScript',
+    tags: 'JavaScript / CSS',
     link: 'https://hala-calculator.vercel.app/',
     image: calculator,
   },
