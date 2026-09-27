@@ -6,6 +6,7 @@ import aleppoKitchen from '../assets/images/aleppo-kitchen.png'
 import trendyStore from '../assets/images/trendy-store.png'
 import calculator from '../assets/images/calculator.png'
 import glowcart from '../assets/images/glowcart.png'
+import digitalClock from '../assets/images/digital-clock.png'
 
 export interface OmsTab {
   label: string
@@ -79,5 +80,13 @@ export const moreProjects: MoreProject[] = [
     tags: 'React.js / Tailwind',
     link: 'https://glowup-store-iota.vercel.app/',
     image: glowcart,
+  },
+  {
+    no: '06',
+    title: 'Digital Clock',
+    description: 'A glassmorphic digital clock with a live date, day, and 24H/12H toggle over an animated gradient backdrop.',
+    tags: 'JavaScript / CSS',
+    link: 'https://digital-clock-one-rosy.vercel.app/',
+    image: digitalClock,
   },
 ]
