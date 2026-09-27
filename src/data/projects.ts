@@ -7,6 +7,7 @@ import trendyStore from '../assets/images/trendy-store.png'
 import calculator from '../assets/images/calculator.png'
 import glowcart from '../assets/images/glowcart.png'
 import digitalClock from '../assets/images/digital-clock.png'
+import todoApp from '../assets/images/todo-app.png'
 
 export interface OmsTab {
   label: string
@@ -88,5 +89,13 @@ export const moreProjects: MoreProject[] = [
     tags: 'JavaScript / CSS',
     link: 'https://digital-clock-one-rosy.vercel.app/',
     image: digitalClock,
+  },
+  {
+    no: '07',
+    title: 'My Tasks',
+    description: 'A to-do list app with task filtering, progress tracking, and a clean gradient UI.',
+    tags: 'JavaScript / CSS',
+    link: 'https://to-do-app-list-ten.vercel.app/',
+    image: todoApp,
   },
 ]
