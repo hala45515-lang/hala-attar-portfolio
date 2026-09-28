@@ -60,7 +60,7 @@ export const moreProjects: MoreProject[] = [
   },
   {
     no: '03',
-    title: 'GlowCart',
+    title: 'Glow Cart',
     description: 'A beauty & makeup e-commerce concept with shade matching, routines, and curated looks.',
     tags: 'React.js / Tailwind',
     link: 'https://glowup-store-iota.vercel.app/',
