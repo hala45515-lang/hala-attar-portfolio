@@ -8,6 +8,7 @@ import calculator from '../assets/images/calculator.png'
 import glowcart from '../assets/images/glowcart.png'
 import digitalClock from '../assets/images/digital-clock.png'
 import todoApp from '../assets/images/todo-app.png'
+import cozyCrochet from '../assets/images/cozy-crochet.png'
 
 export interface OmsTab {
   label: string
@@ -96,5 +97,13 @@ export const moreProjects: MoreProject[] = [
     tags: 'JavaScript / CSS',
     link: 'https://to-do-app-list-ten.vercel.app/',
     image: todoApp,
+  },
+  {
+    no: '08',
+    title: 'CozyCrochetDesignArt',
+    description: 'A cozy storefront landing page for beginner-friendly, no-sew crochet patterns with an Etsy shop link.',
+    tags: 'Next.js / React',
+    link: 'https://cozy-crochet-design-art.vercel.app/',
+    image: cozyCrochet,
   },
 ]
