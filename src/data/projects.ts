@@ -60,11 +60,11 @@ export const moreProjects: MoreProject[] = [
   },
   {
     no: '03',
-    title: 'Trendy Store',
-    description: 'A clean e-commerce storefront with cart, filtering, and checkout flow.',
+    title: 'GlowCart',
+    description: 'A beauty & makeup e-commerce concept with shade matching, routines, and curated looks.',
     tags: 'React.js / Tailwind',
-    link: 'https://hala-trendy-store.vercel.app/',
-    image: trendyStore,
+    link: 'https://glowup-store-iota.vercel.app/',
+    image: glowcart,
   },
   {
     no: '04',
@@ -76,11 +76,11 @@ export const moreProjects: MoreProject[] = [
   },
   {
     no: '05',
-    title: 'GlowCart',
-    description: 'A beauty & makeup e-commerce concept with shade matching, routines, and curated looks.',
+    title: 'Trendy Store',
+    description: 'A clean e-commerce storefront with cart, filtering, and checkout flow.',
     tags: 'React.js / Tailwind',
-    link: 'https://glowup-store-iota.vercel.app/',
-    image: glowcart,
+    link: 'https://hala-trendy-store.vercel.app/',
+    image: trendyStore,
   },
   {
     no: '06',
