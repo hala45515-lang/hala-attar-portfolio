@@ -9,6 +9,8 @@ import glowcart from '../assets/images/glowcart.png'
 import digitalClock from '../assets/images/digital-clock.png'
 import todoApp from '../assets/images/todo-app.png'
 import cozyCrochet from '../assets/images/cozy-crochet.png'
+import sugarBloom from '../assets/images/sugar-bloom.png'
+import halaflora from '../assets/images/halaflora.png'
 
 export interface OmsTab {
   label: string
@@ -105,5 +107,21 @@ export const moreProjects: MoreProject[] = [
     tags: 'Next.js / React',
     link: 'https://cozy-crochet-design-art.vercel.app/',
     image: cozyCrochet,
+  },
+  {
+    no: '09',
+    title: 'Sugar Bloom',
+    description: 'A dreamy bakery landing page for handmade cakes and donuts, with a custom cake builder.',
+    tags: 'Next.js / React',
+    link: 'https://sugar-bloom-peach.vercel.app/',
+    image: sugarBloom,
+  },
+  {
+    no: '10',
+    title: 'Halaflora',
+    description: 'An elegant floral atelier site for hand-tied bouquets, with collections and a build-a-bouquet flow.',
+    tags: 'Next.js / React',
+    link: 'https://halaflora.vercel.app/',
+    image: halaflora,
   },
 ]
