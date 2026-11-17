@@ -118,7 +118,7 @@ export const moreProjects: MoreProject[] = [
   },
   {
     no: '10',
-    title: 'Halaflora',
+    title: 'Hala Flora',
     description: 'An elegant floral atelier site for hand-tied bouquets, with collections and a build-a-bouquet flow.',
     tags: 'Next.js / React',
     link: 'https://halaflora.vercel.app/',
