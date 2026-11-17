@@ -14,10 +14,10 @@ export function Footer() {
               href="https://wa.me/905313869483"
               target="_blank"
               rel="noopener"
+              aria-label="Chat on WhatsApp"
               className={styles.whatsapp}
             >
               <SiWhatsapp />
-              +90 531 386 94 83
             </a>
           </MagneticButton>
         </Reveal>
